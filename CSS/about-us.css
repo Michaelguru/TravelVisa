@@ -1,0 +1,587 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: beige;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    box-shadow: 2px 2px 5px rgba(150, 150, 150, 0.747);
+}
+.hamburger{
+    font-size: 30px;
+    background-color: rgb(255, 136, 0);
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    display: none;
+}
+nav{
+    align-items: center;
+}
+header a img{
+    height: 30px;
+}
+nav a{
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigations a{
+    justify-content: space-between;
+    margin-left: 20px;
+    color: black;
+    transition: .4s;
+}
+.navigations a:hover{
+    color: rgb(255, 136, 0);
+}
+#contact-nav{
+    color: rgb(182, 97, 0);
+    padding: 10px;
+    border: 3px solid rgb(182, 97, 0);
+    border-radius: 10px;
+    transition: .3s;
+}
+#contact-nav:hover{
+    background-color: rgb(255, 136, 0);
+    color: rgb(0, 83, 0);
+}
+
+.hero{
+    text-align: center;
+    padding: 70px;
+    background-image:linear-gradient( #181818cb, #181818a9, #33333342, #000000d2), url(../images/airport-pickup.jpg);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+}
+.hero h1{
+    font-size: 60px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.hero p{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 25% 10px 25%;
+}
+.introduction{
+    padding: 20px;
+    background-color: beige;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.introduction-text{
+    align-content: center;
+    width: 40%;
+    margin-bottom: 50px;
+}
+.introduction-text h2{
+    color: rgb(255, 136, 0);
+    font-size: 35px;
+}
+.introduction-text p{
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.introduction-img {
+    text-align: center;
+    width: 50%;
+    
+}
+.introduction-img img{
+    height: 200px;
+    box-shadow: 2px 3px 10px rgb(170, 170, 170);
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.introduction-img img:nth-child(1){
+    height: 300px;
+}
+.introduction-img img:nth-child(3){
+    width: 45%;
+}
+.introduction-img img:nth-child(4){
+    width: 45%;
+}
+.values{
+    padding: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.mission{
+    border-radius: 20px;
+    padding: 30px;
+    background-color: beige;
+    width: 42%;
+    height: 50vh;
+    box-shadow: 2px 3px 10px rgb(170, 170, 170);
+    transition: .3s;
+}
+.values h2{
+    color: rgb(255, 136, 0);
+    font-size: 28px;
+}
+.values p{
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.vision{
+    box-shadow: 2px 3px 10px rgb(170, 170, 170);
+    border-radius: 20px;
+    padding: 30px;
+    background-color: beige;
+    width: 42%;
+    transition: .3s;
+}
+.vision:hover, .mission:hover{
+    box-shadow: 3px 3px 10px rgb(97, 97, 97);
+}
+.offer{
+    text-align: center;
+}
+.offer h2{
+    margin-bottom: 40px;
+    color: rgb(255, 136, 0);
+    font-size: 28px;
+}
+
+.about-lists{
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.about-lists ul{
+    list-style: none;
+    margin-right: 50px;
+    text-align: left;
+}
+.about-lists ul li{
+    padding-bottom: 40px;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about-lists ul li .fa-solid{
+    padding-right: 10px ;
+    color: rgb(255, 136, 0);
+}
+.why-choose-us{
+    padding: 20px;
+}
+.why-choose-us h4{
+    color: rgb(255, 136, 0);
+    font-size: 28px;
+}
+.why-choose-us h2{
+    font-size: 35px;
+}
+
+.div{
+    margin-top: 30px;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    padding: 40px;
+    height: 300px;
+    transition: .4s ;
+}
+.div:hover{
+    margin-top: 10px;
+}
+.div h3{
+    position: absolute;
+    top: 15%;
+    margin-left: 20px;
+    font-size: 25px;
+    color: white;
+}
+.div p{
+    position: absolute;
+    top: 30%;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    transform: translateY(40px);
+}
+.choose-us-img{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
+    gap: 10px;
+ }
+ .overlay{
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.466);
+}
+
+.contact{
+    height: 50vh;
+    background-image: linear-gradient( #4141417e, #52525273, #33333342, #744322d2), url(../images/flight-booking3.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin: 50px;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+}
+.contact h2{
+    font-size: 35px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    color: white;
+}
+.contact p{
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Gill Sans,' 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px 15%;
+    color: white;
+}
+.contact a{
+    padding: 10px 15px;
+    color:  white;
+    text-decoration: none;
+    background-color: rgb(245, 110, 0);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+    transition: .3s;
+}
+.contact a:hover{
+    padding: 12px 17px;
+    
+}
+
+.footer{
+    background-color: rgb(0, 29, 0);
+    padding: 30px;
+    color: white;
+}
+footer{
+    display: flex;
+    height: 50vh;
+    justify-content:space-between ;
+}
+.logo-div{
+    font-size: 15px;
+    max-width: 25%;
+}
+.logo-div img{
+    height: 80px;
+    margin-bottom: 30px;
+}
+.logo-div p{
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo-div a{
+    text-decoration: none;
+}
+.logo-div .fa-brands{
+    font-size: 20px;
+    padding-right: 10px;
+    color: rgb(245, 110, 0);
+}
+footer h4{
+    font-size: 20px;
+}
+footer a{
+    text-decoration: none;
+    transition: .3s;
+}
+footer a:hover{
+    color: rgb(170, 77, 0);
+}
+.quick-links p{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.quick-links a{
+    color: rgb(245, 110, 0);
+}
+.services-section a{
+    color: rgb(245, 110, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.address-section p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#copyright{
+    text-align: center;
+    font-size: 13px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+    .hamburger{
+        height: 40px;
+        font-size: 30px;
+        background-color: rgb(255, 136, 0);
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: white;
+        display: block;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        transition: .4s ease;
+    }
+    .hamburger:hover{
+        color: rgb(248, 186, 116);
+    }
+    .nav.visible{
+        height: 250px;
+    }
+    .nav{
+        height: 0;
+        overflow: hidden;
+        /* display: none; */
+        text-align: center;
+        justify-content: center;
+        background-color: transparent;
+        margin: 20px;
+        align-items: center;
+        transition: height .5s ease-in-out;
+    }
+    header a img{
+        height: 30px;
+       
+    }
+    nav a{
+        display: block;
+        font-size: 17px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .navigations{
+        text-align: center;
+        
+    }
+    .navigations a{
+        justify-content: space-between;
+        margin-left: 20px;
+        color: black;
+        margin-bottom: 30px;
+        transition: .4s;
+    }
+    .navigations a:hover{
+        color: rgb(255, 136, 0);
+    }
+    #contact-nav{
+        color: rgb(255, 136, 0);
+        padding: 10px;
+        border: 3px solid rgb(255, 136, 0);;
+        border-radius: 10px;
+        transition: .3s;
+    }
+    #contact-nav:hover{
+        background-color: rgb(255, 136, 0);
+        color: rgb(0, 83, 0);
+    }
+    .hero{
+        padding: 60px;
+        background-image:linear-gradient( #181818cb, #181818a9, #33333342, #000000d2), url(../images/airport-pickup.jpg);
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .hero h1{
+        font-size: 50px;
+    }
+    .hero p{
+        padding: 0px;
+    }
+
+    .introduction{
+        padding: 20px;
+        background-color: beige;
+        display: block;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .introduction-text{
+        width:auto;
+    }
+    .introduction-text p{
+        font-size: 16px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .introduction-img {
+        text-align: center;
+        width:auto;
+    }
+    .introduction-img img{
+        height: 150px;
+        box-shadow: 2px 3px 10px rgb(170, 170, 170);
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .introduction-img img:nth-child(1){
+        height: 250px;
+    }
+    .introduction-img img:nth-child(3){
+        width: 45%;
+        height: 30%;
+    }
+    .introduction-img img:nth-child(4){
+        width: 45%;
+        height: 30%;
+    }
+    .values{
+        padding: 20px;
+        display: block;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mission{
+        border-radius: 20px;
+        padding: 30px;
+        background-color: beige;
+        width: auto;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .values h2{
+        color: rgb(255, 136, 0);
+        font-size: 28px;
+    }
+    .values p{
+        font-size: 17px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    }
+    .vision{
+        border-radius: 20px;
+        padding: 30px;
+        background-color: beige;
+        width: auto;
+    }
+
+    .about-lists{
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .about-lists ul{
+        list-style: none;
+        margin-right: 50px;
+        text-align: center;
+    }
+    .about-lists ul li{
+        padding-bottom: 30px;
+        font-weight: 300;
+        font-size: 17px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .about-lists ul li .fa-solid{
+        padding-right: 10px ;
+        color: rgb(255, 136, 0);
+    }
+
+    .contact h2{
+        font-size: 20px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 1000;
+        color: white;
+    }
+    .contact p{
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 10px 10px;
+        color: white;
+    }
+    .footer{
+        text-align: center;
+        background-color: rgb(0, 29, 0);
+        padding: 80px 30px 30px 30px;
+        color: white;
+    }
+    footer{
+        display: block;
+        height: auto;
+        justify-content: center ;
+    }
+    .logo-div{
+        font-size: 15px;
+        max-width: 100%;
+    }
+    .logo-div img{
+        height: 80px;
+        margin-bottom: 30px;
+    }
+    
+    .logo-div p{
+        font-size: 14px;
+        margin-bottom: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-bottom: 20px;
+    }
+    #copyright{
+        text-align: center;
+        font-size: 13px;
+        margin-top: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 450px) {
+    .hero h1{
+        font-size: 40px;
+    }
+    .introduction-img img:nth-child(1){
+        height: 180px;
+    }
+    .introduction-img img:nth-child(3){
+        width: 45%;
+        height: 30%;
+    }
+    .introduction-img img:nth-child(4){
+        width: 45%;
+        height: 30%;
+    }
+    #copyright{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 13px;
+        color: grey;
+    }
+}
