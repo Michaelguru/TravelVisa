@@ -260,6 +260,7 @@ nav a{
     margin-right: 10px;
 }
 .form label{
+    cursor: pointer;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .form label span{
@@ -604,7 +605,7 @@ nav a{
     transition: opacity .5s ease, transform .5s ease ;
     opacity: 0;
 }
-.choose-us-img p:hover{
+.choose-us-img:hover p{
     transform: translateY(0);
     opacity: 1;
 }
